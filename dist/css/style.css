@@ -306,12 +306,22 @@ img {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+    flex-direction: column;
 }
+
 .login__box {
+    display: flex;
 	border: 1px solid #bbb;
-	width: 440px;
+    flex-direction: column;
 	border-radius: 0.5rem;
 	padding: 2rem;
+}
+.login__img{
+    width: 40%;
+    aspect-ratio: 5/2;
+    object-fit: cover;
+    margin: 0 0 2rem 0;
+    align-self: center;
 }
 .form__input {
 	border: 1px solid #bbb;
@@ -463,6 +473,10 @@ input ,select{
 	.dropdown__item {
 		margin: 0.5rem 0;
 	}
+    .login__container{
+        flex-direction: row;
+    }
+    
 }
 @media screen and (min-width: 968px) {
 	:root {
