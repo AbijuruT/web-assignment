@@ -211,6 +211,9 @@ img {
 	background-color: #fff;
 }
 .dropdown:hover .dropdown__menu .nav__link{
+	color: var(--dark-color);
+}
+.dropdown:hover .dropdown__menu .nav__link:hover{
 	color: var(--first-color);
 }
 .dropdown:hover .dropdown__icon {
@@ -249,7 +252,7 @@ img {
   from {opacity: .4} 
   to {opacity: 1}
 }
-.about__section, .department-container{
+.about__section, .department-container, .contact__container{
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 .department__content{
@@ -268,6 +271,20 @@ img {
   font-size: var(--h3-font-size);
   color: var(--first-color);
   margin-bottom: var(--mb-1);
+}
+.contact__button{
+    justify-self: center;
+  }
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  transition: .3s;
+}
+.button:hover{
+  background-color: var(--first-color-light);
 }
 
 /*===== FOOTER ======*/
@@ -351,10 +368,6 @@ img {
         object-fit: contain;
 
     }
-    .nav__name{
-        color: var(--dark-color);
-    }
-
     .nav__list{
         display: flex;
         align-items: center;
@@ -386,6 +399,7 @@ img {
     .dropdown__item{
         margin: .5rem 0;
     }
+    
 
     
 }
